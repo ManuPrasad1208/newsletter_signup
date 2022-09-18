@@ -1,0 +1,24 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.logo{
+  width:80px;
+}
+div{
+  padding: 10rem;
+  width:500px;
+}
+.signbox{
+  text-align:center;
+}
+.textbox{
+  width:300px;
+  height:40px;
+  padding:10px;
+  box-sizing: border-box;
+}
+.sbtn{
+  width:300px;
+}
