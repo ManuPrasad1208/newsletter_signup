@@ -20,7 +20,7 @@ app.get("/",function(req,res){
 const mailchimp = require("mailchimp-marketing");
 //Setting up MailChimp
 mailchimp.setConfig({
-  apiKey: "7ca3a4adfdf08d5c7c207ac50f937522-us11",
+  apiKey: "",
   server: "us11"
 });
 
@@ -32,7 +32,7 @@ app.post("/",function(req,res){
   const status=res.statusCode;
   console.log(status);
 
-  const listid="ff1fddddf6";
+  const listid="";
 
 //Uploading the data to the server
   const run = async () => {
@@ -64,9 +64,3 @@ app.post("/failure",function(req,res){
 app.listen(process.env.POST||3000,function(){
   console.log("server is running on port 3000.");
 })
-
-// MAILCHIMP API KEY
-// 7ca3a4adfdf08d5c7c207ac50f937522-us11
-
-// AudienceID
-// ff1fddddf6
